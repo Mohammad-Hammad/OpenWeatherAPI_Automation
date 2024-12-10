@@ -19,7 +19,7 @@ public class API_Test {
     }
 
     // Validate the response schema
-    @Test(groups = "S`chema")
+    @Test(groups = "Schema")
     public void testResponseSchema() {
         Response response = weatherService.getWeatherByCity("London");
         Assert.assertNotNull(response.jsonPath().get("coord.lon"), "Longitude is missing");
